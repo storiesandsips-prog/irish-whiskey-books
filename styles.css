@@ -595,6 +595,15 @@ h3 {
   border-top: 1px solid var(--line-paper);
 }
 
+.reading-intro {
+  max-width: 900px;
+}
+
+.reading-intro p {
+  color: var(--paper-muted);
+  font-size: 1.1rem;
+}
+
 .book-list article {
   display: grid;
   grid-template-columns: 1fr 0.7fr 1.8fr auto;
