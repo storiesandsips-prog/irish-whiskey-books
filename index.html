@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Irish Whiskey Books | Bonded: The Irish Whiskey Handbook</title>
-    <meta name="description" content="A curated guide to Irish whiskey books, led by Bonded: The Irish Whiskey Handbook, the annual reference for Ireland's distilleries, makers, maps, essays and releases.">
+    <meta name="description" content="A curated guide to the best Irish whiskey books, led by Bonded: The Irish Whiskey Handbook, the annual reference for Ireland's distilleries, makers, maps, essays and releases.">
     <link rel="canonical" href="https://irishwhiskeybooks.com/">
+    <meta name="robots" content="index,follow">
     <meta property="og:title" content="Irish Whiskey Books | Bonded: The Irish Whiskey Handbook">
     <meta property="og:description" content="Discover Bonded, the annual Irish whiskey handbook, plus a curated reading list of essential Irish whiskey books.">
     <meta property="og:type" content="website">
@@ -16,25 +17,60 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Book",
-        "name": "Bonded: The Irish Whiskey Handbook",
-        "isbn": "978-1-0668172-0-7",
-        "bookFormat": "https://schema.org/Hardcover",
-        "author": {
-          "@type": "Person",
-          "name": "Barry Chandler"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Stories and Sips"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "39.00",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/PreOrder",
-          "url": "https://irishwhiskeyhandbook.com/"
-        }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://irishwhiskeybooks.com/#website",
+            "name": "Irish Whiskey Books",
+            "url": "https://irishwhiskeybooks.com/",
+            "description": "A curated guide to Irish whiskey books, led by Bonded: The Irish Whiskey Handbook."
+          },
+          {
+            "@type": "Book",
+            "@id": "https://irishwhiskeybooks.com/#bonded",
+            "name": "Bonded: The Irish Whiskey Handbook",
+            "isbn": "978-1-0668172-0-7",
+            "bookFormat": "https://schema.org/Hardcover",
+            "inLanguage": "en",
+            "author": {
+              "@type": "Person",
+              "name": "Barry Chandler"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Stories and Sips"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/PreOrder",
+              "url": "https://irishwhiskeyhandbook.com/#purchase"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://irishwhiskeybooks.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best Irish whiskey book?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For a current annual guide, Bonded: The Irish Whiskey Handbook is designed as a modern reference to Irish whiskey distilleries, releases, maps, numbers, essays and verified facts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a book about Irish whiskey distilleries?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bonded profiles every working Irish whiskey distillery and explains each site through fact boxes, regional context and annual category reporting."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -44,6 +80,7 @@
       <nav aria-label="Main navigation">
         <a href="#bonded">Bonded</a>
         <a href="#inside">Inside</a>
+        <a href="#buy">Buy</a>
         <a href="#reading-list">Reading List</a>
         <a href="#faq">FAQ</a>
       </nav>
@@ -60,56 +97,107 @@
           <h1>Irish Whiskey Books</h1>
           <p class="lede">Led by <strong>Bonded</strong>, the annual Irish whiskey handbook: every working distillery profiled, the year in numbers, expert essays, maps, travel guides and the releases that defined the year.</p>
           <div class="actions">
-            <a class="button primary" href="https://irishwhiskeyhandbook.com/#purchase">Pre-order Bonded</a>
+            <a class="button primary" href="https://irishwhiskeyhandbook.com/#purchase">Pre-order for EUR 39</a>
             <a class="button secondary" href="#inside">Explore Inside The Book</a>
           </div>
           <p class="shipping-note">Shipping first week December 2026. Available for global delivery.</p>
         </div>
       </section>
 
-      <section class="intro section section-brown">
+      <section class="section intro section-brown">
         <div>
           <p class="section-label">Bonded: Edition I</p>
           <h2>The definitive annual reference for modern Irish whiskey.</h2>
         </div>
-        <p>Irish whiskey is changing quickly. New distilleries, revived styles, independent bottlers, single pot still releases, visitor experiences and global collectors all need one clear, verified place to start. <strong>Bonded: The Irish Whiskey Handbook</strong> is built for that moment.</p>
+        <div class="intro-copy">
+          <p>Irish whiskey is changing quickly. New distilleries, revived styles, independent bottlers, single pot still releases, visitor experiences and global collectors all need one clear, verified place to start.</p>
+          <p><strong>Bonded: The Irish Whiskey Handbook</strong> is built for that moment: a hardback annual for readers who want the story of Irish whiskey told with care, detail and context.</p>
+        </div>
       </section>
 
-      <section class="feature-grid section section-cream" id="inside">
-        <article>
-          <span>01</span>
-          <h3>Every Working Distillery</h3>
-          <p>Profiles of the distilleries shaping Irish whiskey today, with concise fact boxes and verified production details.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>The Year In Numbers</h3>
-          <p>A data-led view of the category, from production and exports to visitor trends and market momentum.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Essays And Expert Voices</h3>
-          <p>Contributions from respected writers, makers and industry figures on the stories behind the year.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Maps And Travel Guides</h3>
-          <p>Useful routes, regional context and practical guidance for readers planning Irish whiskey travel.</p>
-        </article>
+      <section class="stats section section-blue" aria-label="Bonded at a glance">
+        <div>
+          <strong>50</strong>
+          <span>working distilleries profiled</span>
+        </div>
+        <div>
+          <strong>1,000+</strong>
+          <span>verified facts across the book</span>
+        </div>
+        <div>
+          <strong>3,000</strong>
+          <span>hand-numbered first edition copies</span>
+        </div>
+        <div>
+          <strong>2027</strong>
+          <span>the inaugural annual edition</span>
+        </div>
       </section>
 
-      <section class="book-band section">
+      <section class="section section-cream inside" id="inside">
+        <div class="section-heading">
+          <p class="section-label">Inside Bonded</p>
+          <h2>A full year of Irish whiskey in one hardback volume.</h2>
+          <p>Bonded is designed as a reference book, a travel companion and a snapshot of where Irish whiskey stands now.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Every Working Distillery</h3>
+            <p>Profiles of the distilleries shaping Irish whiskey today, with concise fact boxes and verified production details.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>The Year In Numbers</h3>
+            <p>A data-led view of the category, from production and exports to visitor trends and market momentum.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Expert Essays</h3>
+            <p>Contributions from respected writers, makers and industry figures on the stories behind the year.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Maps And Travel Guides</h3>
+            <p>Useful routes, regional context and practical guidance for readers planning Irish whiskey travel.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Releases That Defined The Year</h3>
+            <p>A considered look at the bottles, styles and moments that helped shape the conversation.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>One Question, Many Makers</h3>
+            <p>Irish whiskey people answer the same question, giving the reader a chorus of views from inside the industry.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section methodology section-brown">
+        <div>
+          <p class="section-label">Documented Carefully</p>
+          <h2>Built on primary research, secondary sources and direct verification.</h2>
+        </div>
+        <div class="method-list">
+          <p>Bonded is intended to be a reference book, and a reference book is only useful if readers can trust how it was assembled.</p>
+          <p>Distillery facts are checked against public sources, industry records and direct correspondence wherever possible, with every profile treated as part of a living annual record.</p>
+        </div>
+      </section>
+
+      <section class="book-band section" id="buy">
         <div>
           <p class="section-label">First Edition</p>
-          <h2>The Year of Pot Still Whiskey</h2>
-          <p>A5 case-bound hardback. Hand-numbered first edition. Dark cloth cover, copper foil detailing and a midnight-blue belly band.</p>
+          <h2>The Year of Single Pot Still</h2>
+          <p>A5 case-bound hardback. Dark cloth cover, copper foil detailing and a midnight-blue belly band. Published by Stories and Sips.</p>
         </div>
         <a class="button primary" href="https://irishwhiskeyhandbook.com/#purchase">Buy Bonded</a>
       </section>
 
-      <section class="section readers section-brown">
+      <section class="section readers section-paper">
         <p class="section-label">Who It Is For</p>
-        <h2>A book for drinkers, collectors, travelers and the trade.</h2>
+        <h2>A book for drinkers, collectors, travellers and the trade.</h2>
         <div class="reader-list">
           <p>For enthusiasts who want to understand the distilleries, people and releases defining Irish whiskey now.</p>
           <p>For collectors who want context around limited releases, production shifts and the whiskeys that mattered this year.</p>
@@ -118,7 +206,32 @@
         </div>
       </section>
 
-      <section class="section reading-list" id="reading-list">
+      <section class="section purchase-cards section-brown" aria-label="Buy Bonded">
+        <div class="section-heading section-heading-dark">
+          <p class="section-label">Pre-order Bonded</p>
+          <h2>Buy the annual Irish whiskey handbook.</h2>
+        </div>
+        <div class="cta-grid">
+          <article>
+            <div>
+              <h3>Single Copy</h3>
+              <p class="price">EUR 39</p>
+              <p>For readers, collectors and anyone who wants the first annual edition on their shelf.</p>
+            </div>
+            <a class="button primary" href="https://irishwhiskeyhandbook.com/#purchase">Pre-order</a>
+          </article>
+          <article>
+            <div>
+              <h3>Trade And Bulk Orders</h3>
+              <p class="price price-small">Retail, events and gifting</p>
+              <p>For distilleries, retailers, corporate gifts and events that need multiple copies.</p>
+            </div>
+            <a class="button secondary" href="https://irishwhiskeyhandbook.com/trade/">Trade Enquiries</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reading-list section-paper" id="reading-list">
         <div class="section-heading">
           <p class="section-label">Further Reading</p>
           <h2>Other Irish whiskey books worth reading.</h2>
@@ -128,14 +241,14 @@
         <div class="book-list">
           <article>
             <h3>A Glass Apart</h3>
-            <p class="byline">Fionnán O'Connor</p>
+            <p class="byline">Fionnan O'Connor</p>
             <p>A modern deep dive into Irish single pot still whiskey, with historical research, tasting detail and production context.</p>
             <a href="#" aria-label="Buy or learn more about A Glass Apart">Buy or learn more</a>
           </article>
           <article>
             <h3>Irish Whiskey</h3>
             <p class="byline">Charles MacLean</p>
-            <p>A concise, accessible introduction to Irish whiskey history, styles and producers from one of whisky writing's best-known voices.</p>
+            <p>A concise introduction to Irish whiskey history, styles and producers from one of whisky writing's best-known voices.</p>
             <a href="#" aria-label="Buy or learn more about Irish Whiskey by Charles MacLean">Buy or learn more</a>
           </article>
           <article>
@@ -147,24 +260,19 @@
           <article>
             <h3>Irish Whiskey: A 1000 Year Tradition</h3>
             <p class="byline">Malachy Magee</p>
-            <p>A history-led title that helps frame Irish whiskey as a long cultural and commercial story, rather than only a modern revival.</p>
+            <p>A history-led title that helps frame Irish whiskey as a long cultural and commercial story.</p>
             <a href="#" aria-label="Buy or learn more about Irish Whiskey: A 1000 Year Tradition">Buy or learn more</a>
           </article>
-          <article>
-            <h3>More Irish Whiskey Books</h3>
-            <p class="byline">Curated additions</p>
-            <p>A flexible slot for newer releases, collector guides, distillery histories and affiliate links once the final reading list is chosen.</p>
-            <a href="#" aria-label="Suggest more Irish whiskey books">Suggest title</a>
-          </article>
         </div>
+        <p class="affiliate-note">Some outbound book links may be affiliate links. The reading list is curated for relevance to Irish whiskey readers.</p>
       </section>
 
-      <section class="section faq" id="faq">
+      <section class="section faq section-cream" id="faq">
         <p class="section-label">Irish Whiskey Book FAQ</p>
         <h2>Questions readers search for.</h2>
         <details open>
           <summary>What is the best Irish whiskey book?</summary>
-          <p>For a current, annual view of the category, Bonded is designed as the modern handbook: distilleries, releases, maps, numbers, essays and verified facts in one volume.</p>
+          <p>For a current annual view of the category, Bonded is designed as the modern handbook: distilleries, releases, maps, numbers, essays and verified facts in one volume.</p>
         </details>
         <details>
           <summary>Is there a book about Irish whiskey distilleries?</summary>
@@ -172,33 +280,51 @@
         </details>
         <details>
           <summary>What is a good Irish whiskey gift?</summary>
-          <p>A hardback Irish whiskey book makes a strong gift for collectors, travelers, bartenders and anyone building a deeper understanding of Ireland's national spirit.</p>
+          <p>A hardback Irish whiskey book makes a strong gift for collectors, travellers, bartenders and anyone building a deeper understanding of Ireland's national spirit.</p>
         </details>
         <details>
           <summary>Are there books about single pot still Irish whiskey?</summary>
-          <p>Yes. Bonded's first edition focuses on The Year of Pot Still Whiskey, while Fionnán O'Connor's A Glass Apart remains an important modern reference on the style.</p>
+          <p>Yes. Bonded's first edition focuses on The Year of Single Pot Still, while A Glass Apart remains an important modern reference on the style.</p>
+        </details>
+        <details>
+          <summary>Where can I buy Bonded?</summary>
+          <p>Bonded is available to pre-order from IrishWhiskeyHandbook.com, with global delivery and shipping expected in the first week of December 2026.</p>
         </details>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
+      <div class="footer-intro">
         <h2>Bonded: The Irish Whiskey Handbook</h2>
         <p>Published by Stories and Sips. Edited and published by Barry Chandler.</p>
       </div>
-      <div class="footer-links">
-        <a href="https://irishwhiskeyhandbook.com/">Irish Whiskey Handbook</a>
-        <a href="https://irishwhiskeyhandbook.com/#purchase">Pre-order Bonded</a>
-        <a href="https://irishwhiskeyhandbook.com/working-distilleries/">Working Distilleries</a>
-        <a href="https://irishwhiskeyhandbook.com/irish-whiskey-maps/">Irish Whiskey Maps</a>
-        <a href="https://irishwhiskeyhandbook.com/irish-whiskey-travel-guides/">Travel Guides</a>
-        <a href="https://irishwhiskeyhandbook.com/pot-still-whiskey/">Pot Still Whiskey</a>
-        <a href="https://irishwhiskeyhandbook.com/releases-of-the-year/">Releases Of The Year</a>
-        <a href="https://irishwhiskeyhandbook.com/trade/">Trade And Bulk Orders</a>
-        <a href="https://irishwhiskeyhandbook.com/corrections/">Corrections</a>
-        <a href="https://irishwhiskeyhandbook.com/contact/">Contact</a>
+      <div class="footer-grid">
+        <div>
+          <h3>Buy Bonded</h3>
+          <a href="https://irishwhiskeyhandbook.com/#purchase">Pre-order Bonded</a>
+          <a href="https://irishwhiskeyhandbook.com/trade/">Trade And Bulk Orders</a>
+          <a href="https://irishwhiskeyhandbook.com/contact/">Contact</a>
+        </div>
+        <div>
+          <h3>Inside The Book</h3>
+          <a href="https://irishwhiskeyhandbook.com/working-distilleries/">Working Distilleries</a>
+          <a href="https://irishwhiskeyhandbook.com/irish-whiskey-maps/">Irish Whiskey Maps</a>
+          <a href="https://irishwhiskeyhandbook.com/irish-whiskey-travel-guides/">Travel Guides</a>
+        </div>
+        <div>
+          <h3>Annual Sections</h3>
+          <a href="https://irishwhiskeyhandbook.com/pot-still-whiskey/">Pot Still Whiskey</a>
+          <a href="https://irishwhiskeyhandbook.com/releases-of-the-year/">Releases Of The Year</a>
+          <a href="https://irishwhiskeyhandbook.com/corrections/">Corrections</a>
+        </div>
+        <div>
+          <h3>Irish Whiskey Books</h3>
+          <a href="#bonded">Bonded</a>
+          <a href="#reading-list">Further Reading</a>
+          <a href="#faq">Book FAQ</a>
+        </div>
       </div>
-      <p class="copyright">Copyright 2026 Stories and Sips, LLC. Some outbound book links may be affiliate links.</p>
+      <p class="copyright">Copyright 2026 Stories and Sips, LLC.</p>
     </footer>
   </body>
 </html>
