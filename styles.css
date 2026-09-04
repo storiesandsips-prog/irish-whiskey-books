@@ -131,7 +131,7 @@ nav a {
 }
 
 .hero-content-left {
-  max-width: 720px;
+  max-width: 1120px;
   margin-right: auto;
   margin-left: 0;
 }
@@ -155,10 +155,14 @@ p {
 
 h1 {
   margin-bottom: 22px;
-  font-size: clamp(3.8rem, 7.5vw, 7.8rem);
+  font-size: clamp(3.8rem, 7vw, 7.4rem);
   line-height: 0.92;
   font-weight: 400;
   letter-spacing: 0.01em;
+}
+
+.hero-content-left h1 {
+  white-space: nowrap;
 }
 
 h2 {
@@ -716,6 +720,10 @@ details p {
     max-width: 640px;
     margin-left: 0;
     padding-top: 34vh;
+  }
+
+  .hero-content-left h1 {
+    white-space: normal;
   }
 
   .hero-overlay {
