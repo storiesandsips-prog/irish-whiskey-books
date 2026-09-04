@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Bonded hero image placeholder</title>
+  <desc id="desc">A dark editorial placeholder for the Bonded Irish Whiskey Handbook hero image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#140d0b"/>
+      <stop offset="0.55" stop-color="#241611"/>
+      <stop offset="1" stop-color="#071a32"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#33231c"/>
+      <stop offset="1" stop-color="#120c0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1800" height="1100" fill="#000" opacity="0.18"/>
+  <g transform="translate(1010 155)">
+    <rect x="0" y="0" width="430" height="680" rx="10" fill="url(#book)" stroke="#b76e3f" stroke-width="4"/>
+    <rect x="44" y="74" width="342" height="32" fill="#b76e3f" opacity="0.72"/>
+    <text x="215" y="238" fill="#d39a67" font-family="Georgia, serif" font-size="78" text-anchor="middle" letter-spacing="8">BONDED</text>
+    <text x="215" y="298" fill="#f7f0e6" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" letter-spacing="5">THE IRISH WHISKEY HANDBOOK</text>
+    <rect x="0" y="422" width="430" height="92" fill="#091f3d"/>
+    <text x="215" y="477" fill="#f7f0e6" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" letter-spacing="3">THE YEAR OF POT STILL WHISKEY</text>
+    <text x="215" y="612" fill="#d39a67" font-family="Georgia, serif" font-size="70" text-anchor="middle">2027</text>
+  </g>
+  <g opacity="0.32">
+    <circle cx="1580" cy="170" r="190" fill="#b76e3f"/>
+    <circle cx="1600" cy="185" r="150" fill="#140d0b"/>
+  </g>
+</svg>
