@@ -589,6 +589,32 @@ h3 {
   align-self: flex-start;
 }
 
+.authority-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(34px, 7vw, 92px);
+  border-top: 1px solid var(--line-paper);
+  border-bottom: 1px solid var(--line-paper);
+}
+
+.authority-section .kicker {
+  color: #8b4f2c;
+}
+
+.authority-heading h2 {
+  max-width: 680px;
+  font-size: clamp(2.2rem, 4vw, 4.7rem);
+}
+
+.authority-copy p {
+  color: var(--paper-muted);
+  font-size: 1.12rem;
+}
+
+.authority-copy p:last-child {
+  margin-bottom: 0;
+}
+
 .book-list {
   display: grid;
   gap: 1px;
@@ -761,6 +787,7 @@ details p {
   .featured-book,
   .preview-section,
   .sections-overview,
+  .authority-section,
   .stats,
   .feature-grid,
   .reader-list,
