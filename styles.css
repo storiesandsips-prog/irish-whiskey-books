@@ -239,34 +239,44 @@ h3 {
   position: relative;
   min-height: 100vh;
   display: grid;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+  align-items: stretch;
   overflow: hidden;
-  padding: 128px clamp(22px, 6vw, 84px) 76px;
+  padding: 0;
+  background: #120c0a;
 }
 
 .bonded-feature-media,
 .bonded-feature-overlay {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  inset: auto;
+}
+
+.bonded-feature-media {
+  min-height: 100vh;
+  background: #1a100c;
 }
 
 .bonded-feature-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 32% center;
 }
 
 .bonded-feature-overlay {
-  background:
-    linear-gradient(90deg, rgba(13, 8, 6, 0.05) 0%, rgba(13, 8, 6, 0.14) 38%, rgba(13, 8, 6, 0.84) 63%, rgba(13, 8, 6, 0.98) 100%),
-    linear-gradient(0deg, rgba(13, 8, 6, 0.7) 0%, rgba(13, 8, 6, 0.08) 58%);
+  display: none;
 }
 
 .bonded-feature-copy {
   position: relative;
   z-index: 2;
-  max-width: 660px;
-  margin-left: auto;
+  max-width: none;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 128px clamp(28px, 4vw, 72px) 76px clamp(28px, 4vw, 64px);
   color: var(--ink);
 }
 
@@ -284,6 +294,9 @@ h3 {
 }
 
 .bonded-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
   margin-top: 30px;
 }
 
@@ -543,6 +556,10 @@ h3 {
   font-size: 1.1rem;
 }
 
+.book-band a:not(.button) {
+  color: var(--copper-light);
+}
+
 .reader-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -771,15 +788,19 @@ details p {
       linear-gradient(180deg, rgba(13, 8, 6, 0.12) 0%, rgba(13, 8, 6, 0.28) 38%, rgba(13, 8, 6, 0.94) 76%, rgba(13, 8, 6, 0.98) 100%);
   }
 
-  .bonded-feature-overlay {
-    background:
-      linear-gradient(180deg, rgba(13, 8, 6, 0.08) 0%, rgba(13, 8, 6, 0.22) 42%, rgba(13, 8, 6, 0.94) 76%, rgba(13, 8, 6, 0.99) 100%);
+  .bonded-feature-hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .bonded-feature-media {
+    min-height: 62vh;
   }
 
   .bonded-feature-copy {
-    max-width: 640px;
+    max-width: none;
     margin-left: 0;
-    padding-top: 34vh;
+    padding: 36px clamp(22px, 6vw, 48px) 56px;
   }
 
   .intro,
@@ -840,12 +861,19 @@ details p {
   }
 
   .bonded-feature-hero {
-    min-height: 96vh;
-    padding-bottom: 48px;
+    min-height: 0;
+  }
+
+  .bonded-feature-media {
+    min-height: 48vh;
   }
 
   .bonded-feature-copy h2 {
     font-size: 3.35rem;
+  }
+
+  .bonded-feature-copy .shipping-note {
+    letter-spacing: 0.08em;
   }
 
   .section {

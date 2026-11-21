@@ -12,5 +12,5 @@ First draft of a one-page SEO landing page for IrishWhiskeyBooks.com.
 
 - Replace placeholder outbound links in the reading list with the final affiliate or publisher links.
 - Confirm the final title list for the lower-priority book recommendations.
-- Update Bonded purchase links if the final sales URL differs from `https://irishwhiskeyhandbook.com/#purchase`.
+- Bonded pre-order and buy links use `https://irishwhiskeyhandbook.com/product/bonded-2027-the-irish-whiskey-handbook/`. The annual subscription is `https://irishwhiskeyhandbook.com/product/bonded-annual-subscription/`.
 - Add the real hero and Open Graph image once the final image is selected.
